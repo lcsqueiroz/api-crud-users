@@ -1,0 +1,24 @@
+{
+  "name": "api-crud-users",
+  "version": "1.0.0",
+  "description": "Projeto de estudo a respeito de API com NodeJS. O objetivo é criar uma aplicação CRUD. Inicialmente terá somente o backend mas o projeto pode se estender para uma aplicação fullstack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcsqueiroz/api-crud-users.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/lcsqueiroz/api-crud-users/issues"
+  },
+  "homepage": "https://github.com/lcsqueiroz/api-crud-users#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
