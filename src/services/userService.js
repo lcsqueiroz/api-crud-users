@@ -21,3 +21,15 @@ export const getAllUsers = async () => {
   const users = await User.find();
   return users;
 };
+
+export const updateUser = async ({ id, data }) => {
+  if (!id) {
+    throw new Error('usuário não encontrado');
+  }
+  const updatedUser = await User.findByIdAndUpdate(id, data, {
+    new: true,
+    runValidators: true,
+  });
+
+  return updatedUser;
+};
