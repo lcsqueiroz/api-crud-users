@@ -2,6 +2,7 @@ import {
   createUser,
   getAllUsers,
   updateUser,
+  deleteUserID,
 } from '../services/userService.js';
 
 export const postUser = async (req, res) => {
@@ -27,6 +28,16 @@ export const putUser = async (req, res) => {
   try {
     const result = await updateUser({ id, data });
     res.status(201).json(result);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
+export const deleteUser = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const result = await deleteUserID({ id });
+    res.status(200).json(result);
   } catch (error) {
     res.status(400).json({ message: error.message });
   }

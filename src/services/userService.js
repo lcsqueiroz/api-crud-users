@@ -33,3 +33,12 @@ export const updateUser = async ({ id, data }) => {
 
   return updatedUser;
 };
+
+export const deleteUserID = async ({ id }) => {
+  if (!id) {
+    throw new Error('Usuário não encontrado');
+  }
+  const result = await User.deleteOne({ _id: id });
+
+  return result;
+};
