@@ -125,4 +125,11 @@ Cliente
 
 ## Endpoints
 
-Em desenvolvimento.
+- router.post('/users');
+- router.get('/users');
+- router.put('/users/:id');
+- router.delete('/users/:id');
+
+---
+
+© 2026 | desenvolvido por Lucas Queiroz Vieira
